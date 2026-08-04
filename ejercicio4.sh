@@ -30,3 +30,11 @@ echo " 1) Curso 2) Bash 3) Moderno"
 echo ""
 echo "Si ejecutan: mkdir \"\$NOMBRE_CARPETA\""
 echo "-> Las comillas dobles fuerzan a Bash a tratar todo como un SOLO bloque de texto."
+
+echo "===================================================================="
+echo "--- 3: CARÁCTER DE ESCAPE (\) ---"
+echo "===================================================================="
+
+PRECIO_CURSO=150
+
+echo "El costo de la certificación oficial es de \$${PRECIO_CURSO} USD"
