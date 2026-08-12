@@ -1,0 +1,9 @@
+web01:activo:192.168.1.10:Ubuntu:150
+db01:activo:192.168.1.20:Debian:450
+web02:mantenimiento:192.168.1.11:Ubuntu:90
+test01:activo:192.168.1.99:CentOS:10
+db02:activo:192.168.1.21:Debian:600
+cache01:activo:192.168.1.30:RedHat:200
+cache02:activo:192.168.1.30:RedHat:300
+db02:activo:192.168.1.20:Debian:450
+web02:activo:192.168.1.10:Ubuntu:150
