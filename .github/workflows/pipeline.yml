@@ -32,6 +32,6 @@ jobs:
       # Paso 4: Ejecución del diagnóstico final (Solo si los pasos 2 y 3 dan luz verde) [Módulo VII]
       - name: Ejecutar script de diagnostico Bash
         run: |
-          cd module6
+          cd module7
           echo "🚀 Iniciando pruebas automatizadas finales..."
           bash ./seguridad1.sh <<< "192.168.1.1"
