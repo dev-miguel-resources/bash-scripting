@@ -1,0 +1,13 @@
+name: Integracion Continua DevOps
+on: [push] # Se activa automáticamente con cada subida de código
+jobs:
+  pruebas-sistema:
+    runs-on: ubuntu-latest # Levanta un servidor virtual Ubuntu limpio en la nube
+    steps:
+      - name: Descargar codigo del repositorio
+        uses: actions/checkout@v4
+
+      - name: Ejecutar script de diagnostico Bash
+        run: |
+          echo "🚀 Iniciando pruebas automatizadas..."
+          bash ./seguridad1.sh <<< "192.168.1.1"
