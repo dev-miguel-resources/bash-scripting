@@ -1,0 +1,18 @@
+[2026-08-17 12:34:42] [ERROR] Intento de acceso o formato inválido: '168.162.1.1 '
+[2026-08-17 12:35:01] [ERROR] Intento de acceso o formato inválido: '168.162.1.1asaasaaa'
+[2026-08-17 12:35:20] [ERROR] Intento de acceso o formato inválido: '168.162.1.1;'
+[2026-08-17 12:35:33] [ERROR] Intento de acceso o formato inválido: '168.162.1.1; rm -rf /'
+[2026-08-17 12:39:10] [INFO] Validación exitosa para la dirección IP: 192.168.25.2
+[2026-08-17 12:48:06] [INFO] Validación exitosa para la dirección IP: 10.0.0.1
+[2026-08-17 12:48:08] [ERROR] Intento de acceso o formato inválido: '192.168.1.1; rm -rf /'
+[2026-08-17 12:59:20] [INFO] Validación exitosa para la dirección IP: 10.0.0.1
+[2026-08-17 12:59:21] [ERROR] Intento de acceso o formato inválido: '192.168.1.1; rm -rf /'
+[2026-08-17 13:04:37] [INFO] Validación exitosa para la dirección IP: 10.0.0.1
+[2026-08-17 13:04:38] [ERROR] Intento de acceso o formato inválido: '192.168.1.1; rm -rf /'
+[2026-08-17 13:04:59] [INFO] Validación exitosa para la dirección IP: 10.0.0.1
+[2026-08-17 13:05:00] [ERROR] Intento de acceso o formato inválido: '192.168.1.1; rm -rf /'
+[2026-08-17 13:06:39] [INFO] Validación exitosa para la dirección IP: 10.0.0.1
+[2026-08-17 13:06:39] [ERROR] Intento de acceso o formato inválido: '192.168.1.1; rm -rf /'
+[2026-08-17 13:09:43] [ERROR] Intento de acceso o formato inválido: '192.168.1.1; rm -rf /'
+[2026-08-17 13:10:11] [INFO] Validación exitosa para la dirección IP: 10.0.0.1
+[2026-08-17 13:10:12] [ERROR] Intento de acceso o formato inválido: '192.168.1.1; rm -rf /'
