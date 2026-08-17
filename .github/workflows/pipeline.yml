@@ -27,7 +27,7 @@ jobs:
         run: |
           sudo apt-get install -y bats
           cd module7
-          bats pruebas_proyecto.bats
+          bats pruebas.bats
 
       # Paso 4: Ejecución del diagnóstico final (Solo si los pasos 2 y 3 dan luz verde) [Módulo VII]
       - name: Ejecutar script de diagnostico Bash
