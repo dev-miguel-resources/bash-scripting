@@ -1,15 +1,37 @@
 name: Integracion Continua DevOps
-on: [push] # Se activa automáticamente con cada subida de código
+
+on: [push] # Se activa automáticamente con cada git push [Módulo VII]
+
 jobs:
   pruebas-sistema:
-    runs-on: ubuntu-latest # Levanta un servidor virtual Ubuntu limpio en la nube
+    runs-on: ubuntu-latest # Levanta un Ubuntu limpio en la nube de GitHub [Módulo VII]
+
     steps:
+      # Paso 1: Descargar el código del repositorio a la máquina virtual [Módulo VII]
       - name: Descargar codigo del repositorio
         uses: actions/checkout@v4
 
+      # Paso 2: AUDITORÍA DE SEGURIDAD ESTÁTICA CON SHELLCHECK [Módulo VII]
+      # Instala ShellCheck en el servidor web y escanea todos los archivos .sh [Módulo VII].
+      # Si encuentra una variable sin comillas o un riesgo de inyección, el pipeline se congela [Módulo VI, Módulo VII].
+      - name: Validar scripts con ShellCheck de forma estricta
+        run: |
+          sudo apt-get update && sudo apt-get install -y shellcheck
+          cd module7
+          shellcheck *.sh
+
+      # Paso 3: TESTING UNITARIO AUTOMATIZADO CON BATS [Módulo VII, Módulo VIII]
+      # Instala el framework BATS en la nube y ejecuta tu suite de pruebas de calidad [Módulo VIII].
+      # Si alguna prueba de IP o inyección falla, la máquina virtual abortará el despliegue [Módulo VIII].
+      - name: Ejecutar Suite de Pruebas Unitarias (BATS)
+        run: |
+          sudo apt-get install -y bats
+          cd module7
+          bats pruebas_proyecto.bats
+
+      # Paso 4: Ejecución del diagnóstico final (Solo si los pasos 2 y 3 dan luz verde) [Módulo VII]
       - name: Ejecutar script de diagnostico Bash
         run: |
-          # Le ordenamos a la máquina de GitHub entrar a la carpeta antes de correr el script
           cd module6
-          echo "🚀 Iniciando pruebas automatizadas..."
+          echo "🚀 Iniciando pruebas automatizadas finales..."
           bash ./seguridad1.sh <<< "192.168.1.1"
